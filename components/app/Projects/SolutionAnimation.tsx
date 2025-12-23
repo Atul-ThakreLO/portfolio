@@ -14,7 +14,7 @@ const SolutionAnimation = ({ isActive }: { isActive: boolean }) => {
           () => CHARS[Math.floor(Math.random() * CHARS.length)]
         ).join("")
       );
-    }, 100); // Change characters every 100ms
+    }, 100);
 
     return () => clearInterval(interval);
   }, [isActive]);

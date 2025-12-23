@@ -53,8 +53,8 @@ export function generateProfilePageSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    dateCreated: new Date("2025-01-01").toISOString(),
-    dateModified: new Date().toISOString(),
+    dateCreated: "2025-01-01T00:00:00.000Z",
+    dateModified: "2025-12-24T00:00:00.000Z",
     mainEntity: generatePersonSchema(),
   };
 }

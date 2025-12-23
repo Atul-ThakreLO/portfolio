@@ -23,10 +23,10 @@ const Projects = ({ mainDivRef }: ProjectsProps) => {
       gsap.fromTo(
         mainDivRef.current,
         {
-          backgroundColor: "oklch(0.985 0 0)", // foreground (white)
+          backgroundColor: "oklch(0.985 0 0)",
         },
         {
-          backgroundColor: "oklch(0.145 0 0)", // background (black)
+          backgroundColor: "oklch(0.145 0 0)",
           scrollTrigger: {
             trigger: projectSectionRef.current,
             start: "top 40%",
@@ -35,7 +35,6 @@ const Projects = ({ mainDivRef }: ProjectsProps) => {
           },
         }
       );
-      // Create a timeline for the sequence
     }
 
     return () => {
@@ -68,14 +67,11 @@ const Projects = ({ mainDivRef }: ProjectsProps) => {
         className="absolute bottom-40 left-20 w-80 h-80 bg-chart-1/10 rounded-full blur-3xl animate-pulse pointer-events-none"
         style={{ animationDelay: "1.5s" }}
       ></div>
-
       <div className="flex flex-col items-center pt-20 md:pt-10">
-        {/* Consensus */}
         <Timeline
           sectionRef={projectSectionRef}
           cardsContainerRef={cardsContainerRef}
         />
-        {/* Project Cards */}
         <div ref={cardsContainerRef} className="opacity-0 mt-8 w-full md:px-28">
           <div className="grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] items-center justify-center gap-4 w-full">
             {projects.map((project, index) => (

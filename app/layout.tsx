@@ -17,8 +17,8 @@ const siteConfig = {
   title: "Atul Thakre - Full Stack & Web3 Developer",
   description:
     "Full Stack & Web3 Developer building scalable applications, smart contracts, and modern user experiences. Specializing in Ethereum, Solidity, Next.js, and blockchain development.",
-  url: "https://portfolio-one-mu-22.vercel.app", // Update with your actual domain
-  ogImage: "https://portfolio-one-mu-22.vercel.app/og-image.png", // Update with your actual domain
+  url: "https://portfolio-one-mu-22.vercel.app", 
+  ogImage: "https://portfolio-one-mu-22.vercel.app/og-image.png", 
   links: {
     twitter: "https://x.com/AtulThakre_Lg",
     github: "https://github.com/Atul-ThakreLO",

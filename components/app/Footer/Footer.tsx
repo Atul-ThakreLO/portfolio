@@ -187,7 +187,7 @@ const Footer = () => {
           </div>
           <div ref={logersLogoRef}>
             <Image
-              src={"/Logers.png"}
+              src={"/assets/Logers.png"}
               height={150}
               width={150}
               alt="logers"

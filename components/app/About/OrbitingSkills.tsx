@@ -96,7 +96,7 @@ const Icons = {
     </svg>
   ),
   foundry: () => (
-    <Image src={"/foundry.png"} height={100} width={100} alt="foundry" />
+    <Image src={"/assets/foundry.png"} height={100} width={100} alt="foundry" />
   ),
   arbitrum: () => (
     <svg
