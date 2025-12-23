@@ -3,8 +3,8 @@ export function generatePersonSchema() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Atul Thakre",
-    url: "https://yourportfolio.com",
-    image: "https://yourportfolio.com/og-image.png",
+    url: "https://portfolio-one-mu-22.vercel.app",
+    image: "https://portfolio-one-mu-22.vercel.app/og-image.png",
     sameAs: [
       "https://github.com/Atul-ThakreLO",
       "https://www.linkedin.com/in/atul-thakre-logers",
@@ -38,7 +38,7 @@ export function generateWebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Atul Thakre Portfolio",
-    url: "https://yourportfolio.com",
+    url: "https://portfolio-one-mu-22.vercel.app",
     description:
       "Full Stack & Web3 Developer building scalable applications, smart contracts, and modern user experiences.",
     author: {
