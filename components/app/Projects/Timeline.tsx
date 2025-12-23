@@ -89,7 +89,7 @@ const Timeline = ({ sectionRef, cardsContainerRef }: Props) => {
         { attr: { y2: 0 } },
         {
           attr: { y2: 100 },
-          duration: 3,
+          duration: 2,
           onComplete: () => setIsSolutionActive(false),
         }
       )

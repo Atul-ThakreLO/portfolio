@@ -74,7 +74,7 @@ const Hero = () => {
 
   return (
     <main className="relative">
-      <div className="absolute top-30 left-20 w-64 h-64 bg-chart-5/17 rounded-full blur-3xl animate-pulse pointer-events-none"></div>
+      <div className="absolute top-30 left-20 w-64 h-64 bg-chart-2/17 rounded-full blur-3xl animate-pulse pointer-events-none"></div>
       <div
         className="absolute bottom-20 right-40 w-80 h-80 bg-chart-3/15 rounded-full blur-3xl animate-pulse pointer-events-none"
         style={{ animationDelay: "2s" }}
@@ -95,7 +95,7 @@ const Hero = () => {
           </TextAnimate>
         </div>
       </div>
-      <div className="h-screen w-full justify-between md:justify-normal pb-5 md:pb-0 md:gap-10 flex relative items-center flex-col md:flex-row  md:pl-20 text-background">
+      <div className="h-screen w-full gap-3 md:gap-10 flex relative items-center flex-col md:flex-row  md:pl-20 text-background">
         <div className="absolute top-0 right-0 flex flex-col md:flex-row md:py-4  md:mt-3 mt-2 md:mr-10 font-mono ">
           <div className="md:border-r border-black">
             <TextAnimate
