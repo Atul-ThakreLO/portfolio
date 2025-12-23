@@ -35,7 +35,7 @@ const Hero = () => {
           x: isMobile
             ? -window.innerWidth / 2 + 130
             : -window.innerWidth / 2 + 280,
-          y: isMobile ? -viewportHeight / 2 + 30 : -viewportHeight / 2 + 40,
+          y: isMobile ? -viewportHeight / 2 - 10 : -viewportHeight / 2 + 40,
           scale: 0.8,
           duration: 0.5,
           ease: "power1.inOut",
