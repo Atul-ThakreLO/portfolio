@@ -14,6 +14,10 @@ const Hero = () => {
     document.body.style.overflow = "hidden";
     const isMobile = window.innerWidth < 768;
 
+    // Use visual viewport or document height to avoid URL bar issues
+    const viewportHeight =
+      window.visualViewport?.height || document.documentElement.clientHeight;
+
     const tl = gsap.timeline({
       delay: 1,
       onComplete: () => {
@@ -31,9 +35,7 @@ const Hero = () => {
           x: isMobile
             ? -window.innerWidth / 2 + 130
             : -window.innerWidth / 2 + 280,
-          y: isMobile
-            ? -window.innerHeight / 2 + 30
-            : -window.innerHeight / 2 + 40,
+          y: isMobile ? -viewportHeight / 2 + 30 : -viewportHeight / 2 + 40,
           scale: 0.8,
           duration: 0.5,
           ease: "power1.inOut",
@@ -95,7 +97,7 @@ const Hero = () => {
           </TextAnimate>
         </div>
       </div>
-      <div className="h-screen w-full gap-3 md:gap-10 flex relative items-center flex-col md:flex-row  md:pl-20 text-background">
+      <div className="h-screen w-full gap-0 md:gap-10 flex relative items-center flex-col md:flex-row  md:pl-20 text-background">
         <div className="absolute top-0 right-0 flex flex-col md:flex-row md:py-4  md:mt-3 mt-2 md:mr-10 font-mono ">
           <div className="md:border-r border-black">
             <TextAnimate
