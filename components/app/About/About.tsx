@@ -165,15 +165,15 @@ const About = () => {
         >
           <div className="bg-foreground">
             <p className="text-justify bg-background/90 rounded-4xl rounded-bl-none rounded-br-[40px] text-2xl p-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic eos
-              iste sit corrupti. Inventore architecto fuga culpa temporibus
-              consectetur nobis vitae tenetur, commodi sit optio. Explicabo
-              quaerat harum ducimus necessitatibus! Aperiam, saepe. Veniam
-              adipisci ad vero modi mollitia sunt magni harum voluptatem
-              perferendis nisi? Ipsa voluptatem nesciunt ducimus nisi, repellat
-              omnis esse odit distinctio labore nobis, maiores vel inventore
-              fuga? Quam voluptatibus ipsum saepe est, modi totam aliquam ullam
-              sed expedita voluptatum impedit
+              I am a Web3 Buidler and Full-Stack Developer dedicated to bridging
+              the gap between traditional web efficiency and decentralized
+              innovation. My foundation is built on the PERN stack, utilizing
+              Next.js and TypeScript to create seamless, type-safe user
+              experiences. Within the Ethereum ecosystem, I specialize in
+              Solidity and Foundry, crafting secure smart contracts designed for
+              real-world utility. I am driven by the challenge of solving
+              tangible global issues through full-stack dApps. Let’s connect and
+              build the next generation of the internet.
             </p>
           </div>
           <div className="w-full flex justify-end">
