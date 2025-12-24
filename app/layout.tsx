@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 
 const siteConfig = {
   name: "Atul Thakre",
-  title: "Atul Thakre - Full Stack & Web3 Developer",
+  title: "Atul Thakre - Web3 & Full Stack Developer",
   description:
-    "Full Stack & Web3 Developer building scalable applications, smart contracts, and modern user experiences. Specializing in Ethereum, Solidity, Next.js, and blockchain development.",
+    "Web3 & Full Stack Developer building scalable applications, smart contracts, and modern user experiences. Specializing in Ethereum, Solidity, Next.js, and blockchain development.",
   url: "https://portfolio-one-mu-22.vercel.app", 
   ogImage: "https://portfolio-one-mu-22.vercel.app/og-image.png", 
   links: {
@@ -25,8 +25,8 @@ const siteConfig = {
     linkedin: "https://www.linkedin.com/in/atul-thakre-logers",
   },
   keywords: [
-    "Full Stack Developer",
     "Web3 Developer",
+    "Full Stack Developer",
     "Blockchain Developer",
     "Smart Contracts",
     "Solidity",

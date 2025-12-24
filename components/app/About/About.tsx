@@ -180,7 +180,7 @@ const About = () => {
             <div className="md:w-[80%] bg-foreground rounded-tl-[40px] py-6 inverted-border-custom after:bg-background/90 before:bg-foreground">
               <ul
                 ref={socialLinksRef}
-                className="flex w-full justify-center gap-5 px-3 md:px-0 md:gap-10"
+                className="flex w-full justify-center gap-4 sm:gap-6 px-2 sm:px-3 md:px-0 md:gap-10"
               >
                 {socialLinks.map((link) => (
                   <li

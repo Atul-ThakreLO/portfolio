@@ -14,9 +14,8 @@ const Hero = () => {
     document.body.style.overflow = "hidden";
     const isMobile = window.innerWidth < 768;
 
-    // Use visual viewport or document height to avoid URL bar issues
-    const viewportHeight =
-      window.visualViewport?.height || document.documentElement.clientHeight;
+    // const viewportHeight =
+    //   window.visualViewport?.height || document.documentElement.clientHeight;
 
     const tl = gsap.timeline({
       delay: 1,
@@ -28,14 +27,20 @@ const Hero = () => {
       tl.fromTo(
         textRef.current,
         {
-          x: 0,
-          y: 0,
+          x: "-50%",
+          y: "-50%",
+          left: "50%",
+          top: "50%",
         },
         {
-          x: isMobile
-            ? -window.innerWidth / 2 + 130
-            : -window.innerWidth / 2 + 280,
-          y: isMobile ? -viewportHeight / 2 - 10 : -viewportHeight / 2 + 40,
+          // x: isMobile
+          //   ? -window.innerWidth / 2 + 130
+          //   : -window.innerWidth / 2 + 280,
+          // y: isMobile ? -viewportHeight / 2 - 10 : -viewportHeight / 2 + 40,
+          x: isMobile ? "35%" : "80%",
+          y: 0,
+          top: 5,
+          left: 0,
           scale: 0.8,
           duration: 0.5,
           ease: "power1.inOut",
@@ -84,9 +89,13 @@ const Hero = () => {
 
       <div
         ref={outerContainer}
-        className="h-screen w-full flex items-center justify-center z-50 absolute top-0 left-0"
+        className="h-screen bg-background w-full flex items-center justify-center z-50 absolute top-0 left-0"
       >
-        <div ref={textRef}>
+        <div
+          ref={textRef}
+          className="absolute"
+          // className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
           <TextAnimate
             animation="blurInUp"
             by="character"
@@ -97,7 +106,7 @@ const Hero = () => {
           </TextAnimate>
         </div>
       </div>
-      <div className="h-screen w-full gap-0 md:gap-10 flex relative items-center flex-col md:flex-row  md:pl-20 text-background">
+      <div className="md:h-screen max-h-[140vh] w-full gap-0 md:gap-10 flex relative items-center flex-col md:flex-row  md:pl-20 text-background">
         <div className="absolute top-0 right-0 flex flex-col md:flex-row md:py-4  md:mt-3 mt-2 md:mr-10 font-mono ">
           <div className="md:border-r border-black">
             <TextAnimate
@@ -164,7 +173,7 @@ const Hero = () => {
             modern user experiences.
           </TextAnimate>
         </div>
-        <div className="w-full md:w-1/2 relative rounded-tl-2xl rounded-bl-2xl">
+        <div className="w-full min-h-125 md:min-h-0 md:w-1/2 relative rounded-tl-2xl rounded-bl-2xl">
           {/* <h1 className="absolute top-0 left-0 text-background/50 font-extrabold text-[12rem]">
             WEB3
           </h1>
