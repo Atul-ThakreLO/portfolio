@@ -23,30 +23,17 @@ export const projects: Project[] = [
     url: undefined,
   },
   {
-    name: "Academy management backend",
-    description:
-      "A secure and scalable backend developed using Node.js, Express, and Prisma ORM, powered by Supabase (PostgreSQL). It manages authentication, academic workflows, file handling, and email communication through a robust API architecture.",
-    github: "https://github.com/Atul-ThakreLO/target-aws",
-    url: undefined,
-  },
-  {
     name: "Academy management frontend",
     description:
       "A responsive, role-based frontend built with React.js, Tailwind CSS, and Vite, designed to support public users, students, and staff across educational institutions. The interface emphasizes usability, performance, and smooth content interaction.",
     github: "https://github.com/Atul-ThakreLO/target-academy",
-    url: undefined,
+    url: "https://target-academy-6bl9.vercel.app",
   },
   {
-    name: "BlockMind",
-    description: "Crop suggestions, disease detection",
-    github: "https://github.com/Atul-ThakreLO/BlockMind",
-    url: undefined,
-  },
-  {
-    name: "Books inventory (GraphQL)",
+    name: "Academy management backend",
     description:
-      "This is Simple graphql server to utilize the power of graphql. This is a simple backend for managing book and their Authors, I used the graphql server to take hands on experiance of graphql by building this project",
-    github: "https://github.com/Atul-ThakreLO/graphql-server",
+      "A secure and scalable backend developed using Node.js, Express, and Prisma ORM, powered by Supabase (PostgreSQL). It manages authentication, academic workflows, file handling, and email communication through a robust API architecture.",
+    github: "https://github.com/Atul-ThakreLO/target-aws",
     url: undefined,
   },
   {
@@ -57,17 +44,37 @@ export const projects: Project[] = [
     url: "https://atul-thakre-portfolio.vercel.app/",
   },
   {
+    name: "Books inventory (GraphQL)",
+    description:
+      "This is Simple graphql server to utilize the power of graphql. This is a simple backend for managing book and their Authors, I used the graphql server to take hands on experiance of graphql by building this project",
+    github: "https://github.com/Atul-ThakreLO/graphql-server",
+    url: undefined,
+  },
+  {
+    name: "CLI Tool - Section Comment",
+    description:
+      "A fast and efficient CLI tool for generating beautifully formatted section comments in your code. No more manually typing repetitive comment blocks - just run one command and get professional-looking section dividers instantly copied to your clipboard.",
+    github: "https://github.com/Atul-ThakreLO/CLI-Tool-section-comment",
+    url: undefined,
+  },
+  {
     name: "Upsurge2k25",
     description:
       "A dynamic tech fest website for UPSURGE 2K25, the annual CSE tech fest of YCCE. Built using Next.js and enhanced with GSAP animations to deliver a fast, interactive, and visually engaging experience.",
     github: "https://github.com/Atul-ThakreLO/upsurge2k25",
-    url: undefined,
+    url: "https://upsurge2k25.vercel.app/",
   },
   {
     name: "YCCExMUN CSE",
     description:
       "A dynamic and visually engaging website for MUN, the debate competition by YCCE (CSE). Developed using Next.js and GSAP, focusing on smooth animations, responsiveness, and a professional event presence.",
     github: "https://github.com/Atul-ThakreLO/yccexmun",
+    url: "https://yccexmun-dev.vercel.app",
+  },
+  {
+    name: "BlockMind",
+    description: "Crop suggestions, disease detection",
+    github: "https://github.com/Atul-ThakreLO/BlockMind",
     url: undefined,
   },
 ];
