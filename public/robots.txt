@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://portfolio-one-mu-22.vercel.app/sitemap.xml
+Sitemap: https://atul-thakre-portfolio.vercel.app/sitemap.xml
