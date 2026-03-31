@@ -80,7 +80,7 @@ const QuickLinks = () => {
   };
 
   return (
-    <div className="fixed bottom-15 right-15 z-50 flex flex-col items-end gap-3">
+    <div className="fixed md:bottom-15 md:right-15 bottom-10 right-10 z-50 flex flex-col items-end gap-3">
       {/* Link Menu */}
       {open && (
         <div

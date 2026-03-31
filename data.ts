@@ -52,7 +52,7 @@ export const projects: Project[] = [
       "A responsive, role-based frontend built with React.js, Tailwind CSS, and Vite, designed to support public users, students, and staff across educational institutions. The interface emphasizes usability, performance, and smooth content interaction.",
     github: "https://github.com/Atul-ThakreLO/target-academy",
     url: "https://target-academy-6bl9.vercel.app",
-    category: "frontend",
+    category: "fullstack",
     techStack: ["React.js", "Tailwind CSS", "Vite", "TypeScript"],
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
       "A secure and scalable backend developed using Node.js, Express, and Prisma ORM, powered by Supabase (PostgreSQL). It manages authentication, academic workflows, file handling, and email communication through a robust API architecture.",
     github: "https://github.com/Atul-ThakreLO/target-aws",
     url: undefined,
-    category: "backend",
+    category: "fullstack",
     techStack: ["Node.js", "Express", "Prisma ORM", "Supabase", "PostgreSQL"],
   },
   {
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     github: "https://github.com/Atul-ThakreLO/graphql-server",
     url: undefined,
     category: "backend",
-    techStack: ["GraphQL", "Node.js", "Apollo Server"],
+    techStack: ["GraphQL", "Node.js", "Apollo Server", "TypeScript"],
   },
   {
     name: "CLI Tool - Section Comment",
@@ -97,7 +97,7 @@ export const projects: Project[] = [
       "A dynamic tech fest website for UPSURGE 2K25, the annual CSE tech fest of YCCE. Built using Next.js and enhanced with GSAP animations to deliver a fast, interactive, and visually engaging experience.",
     github: "https://github.com/Atul-ThakreLO/upsurge2k25",
     url: "https://upsurge2k25.vercel.app/",
-    category: "fullstack",
+    category: "frontend",
     techStack: ["Next.js", "GSAP", "Tailwind CSS"],
   },
   {
@@ -106,7 +106,7 @@ export const projects: Project[] = [
       "A dynamic and visually engaging website for MUN, the debate competition by YCCE (CSE). Developed using Next.js and GSAP, focusing on smooth animations, responsiveness, and a professional event presence.",
     github: "https://github.com/Atul-ThakreLO/yccexmun",
     url: "https://yccexmun-dev.vercel.app",
-    category: "fullstack",
+    category: "frontend",
     techStack: ["Next.js", "GSAP", "Tailwind CSS"],
   },
   {
@@ -114,8 +114,8 @@ export const projects: Project[] = [
     description: "Crop suggestions, disease detection using blockchain and AI.",
     github: "https://github.com/Atul-ThakreLO/BlockMind",
     url: undefined,
-    category: "web3",
-    techStack: ["Blockchain", "AI", "Python"],
+    category: "fullstack",
+    techStack: ["ML", "AI", "Python"],
   },
 ];
 
