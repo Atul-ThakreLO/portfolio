@@ -53,6 +53,7 @@ const Hero = () => {
           },
           {
             backgroundColor: "transparent",
+            zIndex: 40,
             //   color: "black",
             duration: 2,
             delay: 0.5,
@@ -94,7 +95,7 @@ const Hero = () => {
         <div
           ref={textRef}
           className="absolute"
-          // className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        // className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         >
           <TextAnimate
             animation="blurInUp"

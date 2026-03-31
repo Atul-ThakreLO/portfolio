@@ -28,8 +28,20 @@ const ProjectCard = ({ details }: ProjectCardProps) => {
               {/* <p>{details.description || "No description provided"}</p> */}
             </CardDescription>
           </CardHeader>
-          <CardContent className="p-4 relative z-0">
+          <CardContent className="p-4 relative z-0 flex flex-col gap-4">
             <p>{details.description || "No description provided"}</p>
+            {details.techStack && details.techStack.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {details.techStack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2.5 py-0.5 text-[10px] md:text-xs font-mono rounded-full bg-foreground/5 border border-border/10 text-foreground/80 hover:bg-foreground/10 transition-colors"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            )}
           </CardContent>
           <div className="flex text-sm justify-between px-3 pb-3 text-foreground/60">
             {details.url ? (

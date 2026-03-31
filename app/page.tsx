@@ -1,49 +1,35 @@
-"use client";
-
-import About from "@/components/app/About/About";
-import Logo from "@/components/app/Fixed/Logo";
-import Hero from "@/components/app/Hero/Hero";
-import Projects from "@/components/app/Projects/Projects";
-import Footer from "@/components/app/Footer/Footer";
+import HomeClient from "./HomeClient";
 import {
-  generatePersonSchema,
-  generateWebSiteSchema,
-  generateProfilePageSchema,
-} from "@/lib/schema";
-import gsap from "gsap";
-import { useEffect, useRef } from "react";
+  getAboutData,
+  getCurrentlyItems,
+  getEducationData,
+  getExperiences,
+  getProjects,
+  getSkills,
+} from "@/lib/notion";
 
-export default function Home() {
-  const mainDivRef = useRef<HTMLDivElement>(null);
+// Force Next.js to dynamically render or revalidate if needed.
+export const revalidate = 3600; // Revalidate every hour
 
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generatePersonSchema()),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateWebSiteSchema()),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateProfilePageSchema()),
-        }}
-      />
+export default async function Page() {
+  // Fetch everything concurrently from Notion / Fallbacks
+  const [about, skills, education, experiences, projects, currently] = await Promise.all([
+    getAboutData(),
+    getSkills(),
+    getEducationData(),
+    getExperiences(),
+    getProjects(),
+    getCurrentlyItems(),
+  ]);
 
-      <div ref={mainDivRef} className="bg-foreground overflow-hidden">
-        <Logo />
-        <Hero />
-        <About />
-        <Projects mainDivRef={mainDivRef} />
-        <Footer />
-      </div>
-    </>
-  );
+  const initialData = {
+    about,
+    skills,
+    education,
+    experiences,
+    projects,
+    currently,
+  };
+
+  return <HomeClient initialData={initialData} />;
 }

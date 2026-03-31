@@ -1,11 +1,15 @@
 /**
  * Represents a project in the portfolio
  */
+export type ProjectCategory = "web3" | "fullstack" | "frontend" | "backend" | "other";
+
 export interface Project {
   name: string;
   description: string;
   github: string;
   url: string | undefined;
+  category: ProjectCategory;
+  techStack?: string[];
 }
 
 /**

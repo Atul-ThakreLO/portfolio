@@ -161,3 +161,7 @@
   width: 40px;
   border-bottom-right-radius: 40px;
 }
+
+* body {
+  scroll-padding-top: 50px;
+}
