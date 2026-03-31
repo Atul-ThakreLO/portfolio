@@ -48,8 +48,8 @@ const TwitterIcon = () => (
 const contactInfo = [
   {
     label: "Email",
-    value: "atulthakre.dev@gmail.com",
-    href: "mailto:atulthakre.dev@gmail.com",
+    value: "atullr3019@gmail.com",
+    href: "mailto:atullr3019@gmail.com",
     icon: <EmailIcon />,
     color: "foreground",
     border: "border-border/20",
@@ -154,7 +154,7 @@ const Contact = () => {
 
           {/* CTA Button */}
           <a
-            href="mailto:atulthakre.dev@gmail.com"
+            href="mailto:atullr3019@gmail.com"
             className="mt-2 w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-foreground border border-foreground text-background font-semibold text-sm hover:bg-foreground/90 transition-all duration-300"
           >
             <span className="w-4 h-4"><EmailIcon /></span>
